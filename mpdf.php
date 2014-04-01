@@ -5130,6 +5130,7 @@ function finishFlowingBlock($endofblock=false, $next='') {
 	$lastBidiText =& $this->flowingBlockAttr[ 'lastBidiText' ];	// mPDF 5.7.1
 	$newblock = $this->flowingBlockAttr[ 'newblock' ];
 	$blockdir = $this->flowingBlockAttr['blockdir'];
+	$jkashida = 0;
 
 	// *********** BLOCK BACKGROUND COLOR *****************//
 	if ($this->blk[$this->blklvl]['bgcolor'] && !$is_table) {
